@@ -17,7 +17,7 @@ async function getContacts() {
     const res = await fetch(domain + contacts_path, config);
     const data = await res.json();
     contactData = data;
-    renderContacts(contactData);
+    console.log(contactData);
   } catch (err) {
     console.log(err);
   }
